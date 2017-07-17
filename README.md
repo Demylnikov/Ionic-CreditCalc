@@ -1,26 +1,45 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+## This is basic mortgage and financing calculator created using [Ionic Framework](https://ionicframework.com/)
+### How to get started with this project
 
-## How to use this template
+**Prerequisites:**
+You need to have [Node.js](https://nodejs.org) installed on your machine.
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
-
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
-
-### With the Ionic CLI:
-
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
-
+1. Clone this repository to wherever you like
+2. Open command line and change to the directory where you cloned the project
+3. Install Ionic framework by executing
 ```bash
 $ sudo npm install -g ionic cordova
-$ ionic start myBlank blank
 ```
-
-Then, to run it, cd into `myBlank` and run:
-
+4. After Ionic has been installed, execute
 ```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
+$ ionic serve
 ```
+You should see a following message:
+```bash
+Looks like a fresh checkout! No ./node_modules directory found. Would you like to install project dependencies?
+```
+5. Enter "yes" or "y", wait for dependencies to be installed. You might get messages about available updates for local plugins, update them if you wish.
+6. The app should launch in a default browser.
 
-Substitute ios for android if not on a Mac.
+All important code is in **src** folder, the generated web app will be in **www** folder.
+
+**If you want a hybrid app aswell**
+1. Open command line and navigate to the project's folder
+2. Execute
+```bash
+$ ionic cordova platform add android
+$ ionic cordova platform add ios
+```
+It is up to you to decide which platforms you want.
+3. To run the app on an emulator or a connected physical device execute
+```bash
+$ ionic cordova run android
+```
+Be aware that you need JDK, Android SDK and defined PATH variables for this to work. Similar applies to iOS.
+
+### Web app with material design
+![Web app](/appimgs/Web.png)
+
+### Hybrid Android app with material design
+![Hybrid app](/appimgs/Hybrid.png)
 
