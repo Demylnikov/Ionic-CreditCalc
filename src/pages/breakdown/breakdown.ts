@@ -35,7 +35,7 @@ kreditdauerJanz: any;
 
   calculateMortgage() {
 
-      while(this.mortgageAmount > this.payment) {
+      while(parseFloat(this.mortgageAmount) > parseFloat(this.payment)) {
         console.log("while loop was executed");
         var tilgung = this.payment - (this.mortgageAmount*(this.interest/100))/12;
         this.mortgageAmount = this.mortgageAmount - tilgung;
